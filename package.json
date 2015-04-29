@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/jshint . && ./node_modules/.bin/jsxhint ."
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/owncloud/mail/issues"
   },
-  "homepage": "https://github.com/owncloud/mail"
+  "homepage": "https://github.com/owncloud/mail",
+  "devDependencies": {
+    "jshint": "^2.7.0",
+    "jsxhint": "^0.14.0"
+  }
 }
