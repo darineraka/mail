@@ -1,0 +1,26 @@
+{
+  "name": "mail",
+  "version": "0.0.1",
+  "description": "Mail app for ownCloud",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/owncloud/mail.git"
+  },
+  "keywords": [
+    "ownCloud",
+    "mail"
+  ],
+  "author": "Thomas Müller and others",
+  "license": "AGPL",
+  "bugs": {
+    "url": "https://github.com/owncloud/mail/issues"
+  },
+  "homepage": "https://github.com/owncloud/mail"
+}
