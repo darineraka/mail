@@ -24,6 +24,9 @@ before_install:
   - bash ./before_install.sh mail $CORE_BRANCH $DB
   - cd ../core
   - php occ app:enable mail
+  - npm install -g npm@latest
+before_script:
+  - npm install --deps
 script:
   - cd apps/mail
   - find . -name \*.php -not -path './vendor/*' -exec php -l "{}" \;
@@ -31,6 +34,7 @@ script:
   - phpunit --configuration phpunit.xml
   - wget https://scrutinizer-ci.com/ocular.phar
   - php ocular.phar code-coverage:upload --format=php-clover clover.xml
+  - npm test
 matrix:
   include:
   - php: 5.4
