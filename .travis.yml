@@ -26,6 +26,7 @@ before_install:
   - php occ app:enable mail
   - npm install -g npm@latest
 before_script:
+  - cd apps/mail
   - npm install --deps
 script:
   - cd apps/mail
