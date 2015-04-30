@@ -29,7 +29,6 @@ before_script:
   - cd apps/mail
   - npm install --deps
 script:
-  - cd apps/mail
   - find . -name \*.php -not -path './vendor/*' -exec php -l "{}" \;
   - cd tests
   - phpunit --configuration phpunit.xml
