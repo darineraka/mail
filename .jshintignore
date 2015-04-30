@@ -1,5 +1,6 @@
 node_modules
 l10n
+vendor
 /* Static 3rd party */
 js/jquery.storageapi.js
 js/backbone.js
